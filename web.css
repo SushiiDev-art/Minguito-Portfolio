@@ -8,6 +8,32 @@
     text-decoration: none;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+input, button, textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+@media (max-width: 600px) {
+    .log-in, .register-form {
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    h2, h3 {
+        font-size: 20px;
+    }
+
+    .profile-image {
+        width: 120px;
+    }
+}
+
 :root {
     --bg-color: rgb(137, 2, 2);
     --sng-bg-color: black;
@@ -826,4 +852,5 @@ form .error {
     font-size: 1.2rem;
     font-weight: bold;
     color: red;
+
 }
