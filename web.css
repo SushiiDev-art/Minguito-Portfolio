@@ -64,13 +64,10 @@ section {
 }
 
 .logout-btn {
-    color: white;
-    background: transparent;
-    font-size: 15px;
-    border: 2px solid white;
-    padding: 8px 15px;
-    border-radius: 8px;
-    cursor: pointer;
+    position: static !important;
+    margin: 0;
+    font-size: 1.6rem;
+    padding: 8px 18px;
 }
 .logout-btn:hover {
     background: red;
@@ -186,10 +183,6 @@ section {
 
 @media (max-width: 768px) {
 
-    .header-container {
-        flex-direction: column;
-        gap: 15px;
-    }
 
     nav ul {
         gap: 15px;
@@ -1073,6 +1066,7 @@ img {
         text-align: center !important;
     }
 }
+
 
 
 
