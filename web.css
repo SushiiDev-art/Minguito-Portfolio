@@ -467,7 +467,7 @@ span {
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     width: 50px;           /* fixed max width for desktop */
-    max-width: 90%;         /* responsive */
+    max-width: 50%;         /* responsive */
     margin: 100px auto;     /* center block */
     text-align: center;
     position: relative;
@@ -483,7 +483,7 @@ span {
 
 /* IMAGE */
 .log-in img {
-    width: 50px;
+    width: 10px;
     height: auto;
     border-radius: 50%;
     display: block;
@@ -505,7 +505,7 @@ form label {
 }
 
 form input {
-    width: 100%;           /* FIX: full width */
+    width: 40%;           /* FIX: full width */
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #d10000;
@@ -516,7 +516,7 @@ form input {
 
 /* BUTTON */
 .log-in button {
-    width: 100%;           /* FIX: full width button */
+    width: 30%;           /* FIX: full width button */
     padding: 12px;
     margin-top: 10px;
     background: #f1f1f1;
@@ -995,6 +995,7 @@ img {
         left: 0;
         margin-top: 10px;
     }
+
 
 
 
