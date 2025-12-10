@@ -64,24 +64,18 @@ section {
 }
 
 .logout-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
     color: white;
     background: transparent;
     font-size: 15px;
     border: 2px solid white;
-    padding: 10px 15px;
+    padding: 8px 15px;
     border-radius: 8px;
     cursor: pointer;
-    z-index: 20000;
-    width: 10%;
+}
+.logout-btn:hover {
+    background: red;
 }
 
-.logout-btn:hover {
-    color: rgb(240, 237, 237);
-    background-color: red;
-}
 #loading-screen {
     position: fixed;
     top: 0;
@@ -1079,6 +1073,7 @@ img {
         text-align: center !important;
     }
 }
+
 
 
 
