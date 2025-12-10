@@ -459,77 +459,81 @@ span {
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* LOGIN WRAPPER */
-.log-in {
-    background: linear-gradient(to right, black, red);
-    color: white;
-    padding: 40px 30px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    width: 100%;           /* fixed max width for desktop */
-    max-width: 50%;         /* responsive */
-    margin: 10px auto;     /* center block */
-    text-align: center;
-    position: relative;
+.log-in{
+        color: white;
+        padding: 50px 40px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        left: 100;
+        top: 100px;
+        background: linear-gradient(to right,black, red);
+        position: relative;
+        margin: auto;
+        width: 50%;
+        justify-content: left;
+        cursor: pointer;
 }
-
-
-/* TITLE */
-.log-in h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+.log-in h2{
+    font-size: 4rem;
 }
-
-
-/* IMAGE */
-.log-in img {
-    width: 200px;
+.log-in i{
+    width: 300px;
     height: auto;
-    border-radius: 8px;
-    display: block;
-    margin: 0 auto 20px;
-    transition: 0.3s ease;
+    position: relative;
+    right: 12px;
+    top: 30px;
 }
 
-.log-in img:hover {
-    transform: scale(1.05);
+h2{
+    font-size: 30px;
 }
-
-
-/* LABELS + INPUTS */
-form label {
+form label{
     display: block;
+    margin: 5px 0 5px;
     text-align: left;
-    font-size: 1.5rem;
-    margin-bottom: 5px;
+    font-size: 15px;
+    position: relative;
+    top: 15px;
 }
 
 form input {
-    width: 40%;           /* FIX: full width */
-    padding: 10px;
+    width: 40%;
+    padding: 10px 10px 10px 30px;
     margin-bottom: 15px;
-    border: 1px solid #d10000;
-    border-radius: 6px;
-    font-size: 1.6rem;
+    border: 1px solid #a80101;
+    border-radius: 4px;
 }
 
-
-/* BUTTON */
 .log-in button {
-    width: 30%;           /* FIX: full width button */
-    padding: 12px;
-    margin-top: 10px;
-    background: #f1f1f1;
-    color: #d10000;
+    width: 20%;
+    padding: 10px;
+    background-color: #ebeef0;
+    color: rgb(216, 9, 9);
     border: none;
-    border-radius: 6px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 1.6rem;
+    position: relative;
+    left: 40px;
+}
+.log-in button:hover {
+    background-color: #0a0a0a;
 }
 
-.log-in button:hover {
-    background: black;
-    color: white;
+.profile-image{
+    width: 40%;
+    height: 40%;
+    border-radius: 8%;
+    clip-path: circle(50%);
+    left: 150px;
+    bottom: 50px;
+    float: right;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.log-in img:hover{
+    transform: scale(1.05);
 }
 .incorrect label{
     background-color: red;
@@ -558,7 +562,7 @@ a[href="Register.html"]:hover{
     padding: 50px 50px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100px;
+    width: 500px;
     color: rgb(247, 241, 241);
     margin: auto;
     height: 80vh;
@@ -637,7 +641,7 @@ a[href="Register.html"]:hover{
 }
 
 
-a[href="Login.html"]{
+a[href="Login.php"]{
     color: white;
     position: absolute;
     bottom: 10px;
@@ -645,22 +649,6 @@ a[href="Login.html"]{
     transform: translateX(-50%);
     font-size: 15px;
     text-decoration: none;
-}
-
-@media (max-width: 768px) {
-    .log-in {
-        width: 30%;
-        padding: 30px 20px;
-        margin-top: 50px;
-    }
-
-    .log-in h2 {
-        font-size: 2.4rem;
-    }
-
-    form label {
-        font-size: 1.4rem;
-    }
 }
 
 
@@ -867,13 +855,13 @@ form .error {
     color: red;
 }
 img {
-    max-width: 60%;
+    max-width: 100%;
     height: auto;
     display: block;
 }
 .container, .log-in, .register-form {
     max-width: 50%;
-    width: 60%;
+    width: 50%;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -968,10 +956,13 @@ img {
 
     /* LOGIN FORM */
     .log-in {
-        width: 90%;
+        width: 50%;
         padding: 30px;
         top: 0;
         left: 0;
+    }
+    .loginForm{
+        width: 50%;
     }
 
     form input {
@@ -995,6 +986,103 @@ img {
         left: 0;
         margin-top: 10px;
     }
+
+    /* PROJECTS */
+    .section-title {
+        left: 0 !important;
+        bottom: 0 !important;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* CONTACT */
+    .contact-container {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px){
+
+    /* HEADER FIX */
+    #header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 1.2rem;
+    }
+
+    /* LOGO FIX */
+    .Logo {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .logout-btn {
+        position: static;
+        margin-top: 10px;
+    }
+
+    /* MENU ICON FIX */
+    #menu-icon {
+        font-size: 3rem;
+        position: static;
+        margin: 10px auto;
+        display: block;
+    }
+
+    /* NAVBAR FIX */
+    .navbar {
+        width: 100%;
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 10px;
+        left: 0 !important;
+        right: 0 !important;
+        position: static !important;
+    }
+
+    .navbar a {
+        right: 0 !important;
+        font-size: 2rem;
+        padding: 10px 0;
+    }
+}
+
+    @media (max-width: 1000px) {
+
+    .home-img img {
+        width: 80vw !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .Home {
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 3rem;
+    }
+
+    .home-content {
+        margin-left: 0 !important;
+        text-align: center !important;
+    }
+}
+
+
 
 
 
