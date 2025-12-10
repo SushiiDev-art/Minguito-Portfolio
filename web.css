@@ -452,7 +452,7 @@ span {
         padding: 50px 40px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 300px;
+        width: 100px;
         left: 100;
         top: 100px;
         background: linear-gradient(to right,black, red);
@@ -1066,6 +1066,7 @@ img {
         text-align: center !important;
     }
 }
+
 
 
 
