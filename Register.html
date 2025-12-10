@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Minguito's Portfolio</title>
+</head>
+
+<body style="background-color: black;">
+
+    <div class="register-form">
+        <h3>Registration</h3>
+
+        <form id="regForm">
+            <label for="username">Username</label>
+            <i class="fa fa-user icon"></i>
+            <input type="text" id="username" required>
+
+            <label for="password">Password</label>
+            <i class="fa fa-key icon"></i>
+            <input type="password" id="password" required>
+
+            <label for="repeat">Repeat Password</label>
+            <i class="fa fa-key icon"></i>
+            <input type="password" id="repeat" required>
+
+
+            <button type="submit">Register</button>
+
+            <div class="login-link">
+                <p>Already have an account? <a href="Login.html">Login here</a></p>
+            </div>
+            
+        <div id="successAlert" class="alert-box">
+            <p>Registration Successful!</p>
+        </div>
+        </form>
+
+    </div>
+
+    <!-- REGISTER VALIDATION SCRIPT -->
+    <script>
+    document.getElementById("regForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const user = document.getElementById("username").value.trim();
+        const pass = document.getElementById("password").value;
+        const rep  = document.getElementById("repeat").value;
+        const msg  = document.getElementById("successAlert");
+
+        msg.textContent = "";
+
+        if (!user || !pass) {
+            msg.textContent = "Please fill out all fields.";
+            return;
+        }
+
+        if (pass !== rep) {
+            msg.textContent = "Passwords do not match.";
+            return;
+        }
+
+        // Get existing users
+        let users = JSON.parse(localStorage.getItem("users")) || [];
+
+        // Check if username already exists
+        if (users.some(u => u.username === user)) {
+            msg.textContent = "Username already taken.";
+            return;
+        }
+
+        // Save new user
+        users.push({ username: user, password: pass });
+        localStorage.setItem("users", JSON.stringify(users));
+
+        alert("Registration successful! Redirecting to login page...");
+
+        // Redirect to login page
+        window.location.href = "Login.html";
+    });
+    </script>
+
+</body>
+</html>
