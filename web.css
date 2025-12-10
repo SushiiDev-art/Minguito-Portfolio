@@ -466,9 +466,9 @@ span {
     padding: 40px 30px;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    width: 50px;           /* fixed max width for desktop */
+    width: 20%;           /* fixed max width for desktop */
     max-width: 50%;         /* responsive */
-    margin: 100px auto;     /* center block */
+    margin: 10px auto;     /* center block */
     text-align: center;
     position: relative;
 }
@@ -558,7 +558,7 @@ a[href="Register.html"]:hover{
     padding: 50px 50px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 500px;
+    width: 100px;
     color: rgb(247, 241, 241);
     margin: auto;
     height: 80vh;
@@ -995,6 +995,7 @@ img {
         left: 0;
         margin-top: 10px;
     }
+
 
 
 
