@@ -485,7 +485,7 @@ span {
 .log-in img {
     width: 10px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 8px;
     display: block;
     margin: 0 auto 20px;
     transition: 0.3s ease;
@@ -637,7 +637,7 @@ a[href="Register.html"]:hover{
 }
 
 
-a[href="Login.php"]{
+a[href="Login.html"]{
     color: white;
     position: absolute;
     bottom: 10px;
@@ -649,7 +649,7 @@ a[href="Login.php"]{
 
 @media (max-width: 768px) {
     .log-in {
-        width: 90%;
+        width: 30%;
         padding: 30px 20px;
         margin-top: 50px;
     }
@@ -867,13 +867,13 @@ form .error {
     color: red;
 }
 img {
-    max-width: 100%;
+    max-width: 30%;
     height: auto;
     display: block;
 }
 .container, .log-in, .register-form {
-    max-width: 100%;
-    width: 100%;
+    max-width: 30%;
+    width: 30%;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -995,6 +995,7 @@ img {
         left: 0;
         margin-top: 10px;
     }
+
 
 
 
