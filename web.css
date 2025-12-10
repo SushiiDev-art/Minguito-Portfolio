@@ -75,6 +75,7 @@ section {
     border-radius: 8px;
     cursor: pointer;
     z-index: 20000;
+    width: 10%;
 }
 
 .logout-btn:hover {
@@ -1078,6 +1079,7 @@ img {
         text-align: center !important;
     }
 }
+
 
 
 
