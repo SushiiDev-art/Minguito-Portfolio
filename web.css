@@ -965,6 +965,7 @@ img {
     }
     .loginForm{
         width: 50%;
+        top: 300px;
     }
 
     form input {
@@ -1083,6 +1084,7 @@ img {
         text-align: center !important;
     }
 }
+
 
 
 
