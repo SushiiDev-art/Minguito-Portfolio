@@ -571,16 +571,15 @@ form input {
 .incorrect input{
     background-color: red;
 }
-a[href="Register.html"]{
+a[href="Register.html"] {
     color: white;
-    position: absolute;
-    bottom: 10px;         /* distance from bottom of circle */
-    left: 50px;
-    transform: translateX(-50%);
     font-size: 15px;
     text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
 }
-a[href="Register.html"]:hover{
+
+a[href="Register.html"]:hover {
     color: black;
 }
 
@@ -1119,6 +1118,7 @@ img {
         text-align: center !important;
     }
 }
+
 
 
 
