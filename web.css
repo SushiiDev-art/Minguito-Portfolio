@@ -248,76 +248,50 @@ section {
 }
 
 
-.Home {
-    display: flex;
-    justify-content: baseline;
-    align-items: center;
-}
-
-.home-img img{
-    width: 25vw;
-    border-radius:  50%;
-    box-shadow: 0 0 10px rgb(238, 236, 236);
-    cursor: pointer; animation: floatImage 4s ease-in-out infinite;
-    transition: 0.4s ease;
-    border-radius: 8px;
-    max-width: 1200px;
-    background: linear-gradient(rgb(96, 96, 229)50px, white);
-}
-
-.home-img img:hover{
-    box-shadow: 0 0 25px rgb(244, 241, 241),
-                0 0 25px rgb(255, 254, 252),
-                0 0 35px rgb(252, 251, 250);
-}
-
+.Home { display: flex;
+       justify-content: baseline;
+       align-items: center; 
+      } 
+.home-img img{ width: 25vw; 
+              border-radius: 50%;
+              box-shadow: 0 0 10px rgb(238, 236, 236);
+              cursor: pointer;
+              animation: floatImage 4s ease-in-out infinite;
+              transition: 0.4s ease;
+              border-radius: 8px;
+              max-width: 1200px; 
+              background: linear-gradient(rgb(96, 96, 229)50px, white); 
+             } 
+.home-img img:hover{ box-shadow: 0 0 25px rgb(244, 241, 241),
+    0 0 25px rgb(255, 254, 252),
+    0 0 35px rgb(252, 251, 250); 
+                   }
 @keyframes floatImage {
-    0% {
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(-2.4rem);
-    }
-    100%{
-        transform: translateY();
-    }
-}
+    0% { transform: translateY(0); 
+       } 
+    50%{ transform: translateY(-2.4rem);
+       } 100%{ transform: translateY();
+             }} 
+.home-content { margin-left: 5rem;
+              } 
+.home-content h1 { font-size: 6rem; 
+                  font-weight: 700;
+                  color: white; 
+                 } 
+.home-content h1:nth-of-type(2){ margin-bottom: 2rem; 
+                               } 
+span { color: red; } 
+.home-content h4 { font-size: 7rem; font-weight: 700; line-height: 1.3; color: white;
+                 }
+.home-content h5 { font-size: 5rem;
+                  font-weight: 700;
+                  line-height: 1.3;
+                  color: white;
+                 }
 
-.home-content {
-    margin-left: 5rem;
-}
-.home-content h1 {
-    font-size: 6rem;
-    font-weight: 700;
-    color: white;
-}
-
-.home-content h1:nth-of-type(2){
-    margin-bottom: 2rem;
-    
-}
-
-span {
-    color: red;
-}
-
-.home-content h4 {
-    font-size: 7rem;
-    font-weight: 700;
-    line-height: 1.3;
-    color: white;
-}
-.home-content h5 {
-    font-size: 5rem;
-    font-weight: 700;
-    line-height: 1.3;
-    color: white;
-}
-
-.home-content p {
-    font-size: 1.6rem;
-    color: white;
-}
+.home-content p { font-size: 1.6rem;
+                 color: white; 
+                }
 
 .Social-media a{
     display: inline-flex;
@@ -1118,6 +1092,7 @@ img {
         text-align: center !important;
     }
 }
+
 
 
 
