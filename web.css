@@ -6,6 +6,7 @@
     font-family: system-ui, -apple-system, sans-serif;
     outline: none;
     text-decoration: none;
+    overflow: hidden;
 }
 
 
@@ -1084,6 +1085,7 @@ img {
         text-align: center !important;
     }
 }
+
 
 
 
