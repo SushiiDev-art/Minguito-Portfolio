@@ -466,7 +466,7 @@ span {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         width: 300px;
         left: 100;
-        top: 100px;
+        top: 300px;
         background: linear-gradient(to right,black, red);
         position: relative;
         margin: auto;
@@ -1083,5 +1083,6 @@ img {
         text-align: center !important;
     }
 }
+
 
 
